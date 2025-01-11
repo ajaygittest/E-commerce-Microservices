@@ -20,6 +20,7 @@ public class AddressController {
 	@GetMapping("/address/{employeeId}")
 	public ResponseEntity<Address> getAddressByEmployeeId(@PathVariable("employeeId") int id) {
 		 
+		System.out.println("Address Services");
 		Address address=service.addressDetails(id);
 		
 		
